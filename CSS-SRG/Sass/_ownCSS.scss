@@ -1,0 +1,15 @@
+@import "preVariables";
+
+.profile-image {
+    margin: -10px 10px;
+    height: 40px;
+}
+
+.nav-tabs li:first-child {
+    margin-left: 15px;
+}
+
+table {
+    border: 1px solid $brand-border;
+}
+ 

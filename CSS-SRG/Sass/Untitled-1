@@ -1,0 +1,89 @@
+.property{
+    box-shadow: 0px 0px 5px $brand-secondary;
+    border: 1px solid $brand-border !important;
+}
+
+.property:focus {
+    border-color: $input-border-focus !important;
+    box-shadow: 0px 0px 6px $input-border-focus !important;
+}
+
+.value{
+    border: 1px solid $brand-border !important;
+}
+
+.value:focus {
+    border-color: $input-border-focus !important;
+    box-shadow: 0px 0px 6px $input-border-focus !important;
+}
+
+.dataTable {
+    margin-top: 10px;
+    margin-bottom: 0px !important;
+}
+
+.dataTables_scrollBody table {
+    margin-top: -2px;
+}
+
+.expanded table {
+    border: none ;
+}
+
+.expanded th {
+    border: none !important ;
+}
+
+.expanded tr {
+    border: none !important ;
+}
+
+.expanded > td {
+    border: none !important ;
+}
+
+.expander table {
+    width: 100% !important;
+}
+
+.ui-sortable {
+    border: none;
+}
+
+.property{
+    box-shadow: 0px 0px 5px $brand-secondary;
+    border: 1px solid $brand-border !important;
+}
+
+.property:focus {
+    border-color: $input-border-focus !important;
+    box-shadow: 0px 0px 6px $input-border-focus !important;
+}
+
+.value{
+    border: 1px solid $brand-border !important;
+}
+
+.value:focus {
+    border-color: $input-border-focus !important;
+    box-shadow: 0px 0px 6px $input-border-focus !important;
+}
+.expanded table {
+    border: none ;
+}
+
+.expanded th {
+    border: none !important ;
+}
+
+.expanded tr {
+    border: none !important ;
+}
+
+.expanded > td {
+    border: none !important ;
+}
+
+.expander table {
+    width: 100% !important;
+}
