@@ -110,7 +110,12 @@
     
 }
 
-.sidebar ul li a.active {
+.sidebar ul li.active {
+    background-color: $body-bg;
+}
+
+.sidebar ul li.active a {
+    color: $brand-primary;
 }
 
 .sidebar .arrow {

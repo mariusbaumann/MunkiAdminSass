@@ -130,7 +130,7 @@ $border-radius-small:       0px !default;
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff !default;
 //** Global background color for active items (e.g., navs or dropdowns).
-$component-active-bg:       $brand-primary !default;
+$component-active-bg:       darken($body-bg, 60%);
 
 //** Width of the `border` for generating carets that indicate dropdowns.
 $caret-width-base:          0px !default;
@@ -393,7 +393,7 @@ $navbar-default-border:            lighten($navbar-default-bg, 30%) !default;
 $navbar-default-link-color:                #ddd !default;
 $navbar-default-link-hover-color:          $brand-secondary !default;
 $navbar-default-link-hover-bg:             $body-bg !default;
-$navbar-default-link-active-color:         #555 !default;
+$navbar-default-link-active-color:         #fff !default;
 $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
@@ -651,7 +651,7 @@ $alert-success-border:        $state-success-border !default;
 
 $alert-info-bg:               $state-info-bg !default;
 $alert-info-text:             $state-info-text !default;
-$alert-info-border:           $state-info-border !default;
+$alert-info-border:           darken($state-info-border, 10%);
 
 $alert-warning-bg:            $state-warning-bg !default;
 $alert-warning-text:          $state-warning-text !default;
@@ -703,7 +703,7 @@ $list-group-active-color:       $component-active-color !default;
 //** Background color of active list items
 $list-group-active-bg:          $component-active-bg !default;
 //** Border color of active list elements
-$list-group-active-border:      $list-group-active-bg !default;
+$list-group-active-border:      darken($list-group-active-bg, 20%) !default;
 //** Text color for content within active list items
 $list-group-active-text-color:  lighten($list-group-active-bg, 40%) !default;
 

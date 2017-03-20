@@ -12,4 +12,20 @@
 table {
     border: 1px solid $brand-border;
 }
- 
+.workflow-parent:hover .workflow-button {
+    display: block;
+    width: 20%;
+    margin-top: -40px;
+}
+
+.workflow-parent:hover .workflow-content {
+    display: block;
+    width: 80%;
+}
+
+.workflow-button {
+    float: right;
+    display: none;
+    font-size: 26px;
+    text-align: center;
+}
