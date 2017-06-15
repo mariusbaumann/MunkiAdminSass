@@ -135,8 +135,6 @@ tr:last-child td {
   
 }
 
-
-
 .grid li .detail {
   display:none;
 }
@@ -153,4 +151,16 @@ tr:last-child td {
   display: inline-block;
   float: left;
   width: 100%;
+}
+
+/* ------------------- CLIENT ERROR-REPORTING --------------------------*/
+
+.client-error {
+  background-color: $state-danger-bg;
+  
+}
+
+.client-warning {
+  background-color: $state-warning-bg;
+
 }
