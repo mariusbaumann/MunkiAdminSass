@@ -1,66 +1,14 @@
 @import "preVariables";
 
+/* ------------------- GENERAL -----------------------*/
+
+.fix-margin-list-btn {
+    margin-right: 5px;
+}
+
 #deviceList {
   list-style: none;
   margin-left: -40px;
-}
-
-.list li {
-  width: 100%;
-  border-top: 1px solid $brand-border;
-  border-left: 1px solid $brand-border;
-  border-right: 1px solid $brand-border;
-  border-bottom: 1px solid $body-bg;
-  background-color: $accent-gray;
-}
-
-.list li:nth-child(odd) {
-
-}
-
-.list li:last-child  {
-  border-bottom: 1px solid $brand-border;
-}
-
-.list li:first-child  {
-  border-top: 1px solid $brand-border;
-}
-
-.list li img {
-  width: 32px;
-}
-
-.list li h4 {
-   font-size: 10pt;
-}
-
-.list li img, .list li h4 {
-  margin-right: 20px;
-  float: left;
-}
-
-.grid li {
-  float: left;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  background-color: $accent-gray;
-  text-align: center;
-  box-sizing: border-box;
-  border: 1px solid $brand-border;
-
-}
-
-.grid li:hover, .list li:hover {
-  background-color: $brand-hover;
-  border: 1px solid $brand-secondary;
-}
-
-.grid li .detail {
-  display:none;
 }
 
 .nav-tabs > li, .nav-pills > li {
@@ -74,27 +22,74 @@
     text-align:center;
 }
 
-
 tr:last-child td {
 }
 
 .tabDetail {
-    overflow:auto;
+    overflow-y:auto;
+    overflow-x: hidden;
     height:100%;
+}
+
+.border-div {
+  background-color: $accent-gray;
+  border-right: 1px solid $brand-border;
+  border-top: 1px solid $brand-border;
+  border-left: 1px solid $brand-border;
+}
+
+.border-div:hover {
+  background-color: $brand-hover;
+  border: 1px solid $brand-secondary;
+}
+
+/* ------------------- LIST --------------------------*/
+
+.list li {
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 5px !important;
+  padding-bottom: 5px !important;
+  height: 40px;
+}
+
+.list span {
+  display: inline-block;
+  float: left;
+  width: 22%;
+  height: 40px;
+  padding: 10px 0px 0px 10px;
+}
+
+
+.list img {
+  float: left;
+}
+
+
+.list li > .border-div {
+ height: 40px;
+}
+
+.list li:last-child > .border-div {
+ border-bottom: 1px solid $brand-border;
+}
+
+.list li:hover:last-child > .border-div {
+ border-bottom: 1px solid $brand-secondary;
+}
+.list li img {
+  width: 32px;
+  margin-left: 5px;
 }
 
 .list-group input {
     height: 20px;
 }
 
-
 .list-group.list-group-root {
   padding: 0;
   border: none;
-}
-
-.list-group.list-group-root > a:hover{
-  
 }
 
 .list-group.list-group-root > a {
@@ -111,25 +106,51 @@ tr:last-child td {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/*
-.list-group.list-group-root .list-group-item {
-}
 
-.list-group.list-group-root > .list-group-item:first-child {
-}
-
-.list-group.list-group-root > .list-group-item:last-child {
-}
-*/
 .list-group.list-group-root > .list-group > .list-group-item {
   padding-left: 20px;
 }
-/*
-.manifestObjects {
-  
-}*/
 
-.newElementInput {
-  /*border: none;*/
- /* width: 100%;*/
+
+
+/* ------------------- GRID --------------------------*/
+
+
+.grid li > .border-div {
+ border-bottom: 1px solid $brand-border;
+ height: 100px;
+}
+
+.grid li:hover > .border-div {
+ border-bottom: 1px solid $brand-secondary;
+}
+
+.grid li {
+  float: left;
+  padding-left: 0 !important;
+  padding-right: 5px !important;
+  padding-bottom: 5px !important;
+  text-align: center;
+  box-sizing: border-box;
+  
+}
+
+
+
+.grid li .detail {
+  display:none;
+}
+
+.grid-list {
+  margin-right: 5px !important;
+}
+
+.grid li:hover > .border-div {
+ border-bottom: 1px solid $brand-secondary;
+}
+
+.grid .important {
+  display: inline-block;
+  float: left;
+  width: 100%;
 }

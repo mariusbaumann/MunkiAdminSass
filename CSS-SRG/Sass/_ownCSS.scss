@@ -12,6 +12,9 @@
 table {
     border: 1px solid $brand-border;
 }
+
+/* -------------------- SETUP-WORKFLOW ----------------------*/
+
 .workflow-parent:hover .workflow-button {
     display: block;
     width: 20%;
@@ -28,4 +31,71 @@ table {
     display: none;
     font-size: 26px;
     text-align: center;
+}
+
+/* -------------------- MODAL ----------------------*/
+
+.modal-dialog {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.modal-content {
+  border-radius: 0;
+
+}
+
+
+/* ------------------------ LEDs ---------------------------*/
+.led-box {
+  height: 20px;
+  margin: 3px 0;
+  margin-left: 10px;
+  float: right;
+}
+
+.led-green {
+  margin: 0 auto;
+  width: 15px;
+  height: 15px;
+  background-color: $brand-success;
+  border-radius: 50%;
+  border: 1px solid darken($brand-success, 20%);
+}
+
+.led-red {
+  margin: 0 auto;
+  width: 15px;
+  height: 15px;
+  background-color: $brand-danger;
+  border-radius: 50%;
+  border: 1px solid darken($brand-danger, 20%);
+}
+
+.led-orange {
+  margin: 0 auto;
+  width: 15px;
+  height: 15px;
+  background-color: $brand-warning;
+  border-radius: 50%;
+  border: 1px solid darken($brand-warning, 20%);
+}
+
+.led-grey {
+  margin: 0 auto;
+  width: 15px;
+  height: 15px;
+  background-color: $gray-light;
+  border-radius: 50%;
+  border: 1px solid darken($gray-light, 20%);
+}
+
+/* ------------------------ MANIFESTS-OWN ---------------------------*/
+
+.table-list-item:hover {
+  background-color: $brand-hover;
+  border: 1px solid $brand-secondary;
+  border-top: 1px solid $brand-secondary;
 }
